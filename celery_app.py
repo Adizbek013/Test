@@ -9,7 +9,7 @@ celery = Celery(
     backend='redis://localhost:6379/0',
 )
 
-
+print('*')
 @celery.task
 def send_info():
     data = kun_uz()
